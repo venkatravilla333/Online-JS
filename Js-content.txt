@@ -1,0 +1,66 @@
+1) Introduction
+===============    
+         
+1) what is JS?
+
+   JS is a programing language which is used to develop dynamic web and mobile apps.
+
+   By using JS we can manipulate (add, update, delete) DOM.
+
+   By using JS we can perform validations.
+
+2) What is ES?
+
+   Ecma Script is a specification for JS.
+
+3) What is nodejs? 
+   
+   Node js is a run time environment for JS.
+   By using nodejs we can create APIs.
+   Node js is not a programing lanaguage.
+   Node js is not a library.
+   Node js is not a framework.  
+   
+
+2) Setup Development environment?
+   =============================
+
+  
+
+  2) Front-end
+
+    - We need a Browser (Chrome).
+    - We need an IDE to write code (vs code).
+    - We need a HTML file to run js code in front-end. 
+    - Every browser has js engine in it to run js code. 
+
+  3) Back-end
+
+    - We need to install Nodejs to run js code in back-end.
+    - We need an IDE to write code. 
+    - Nodejs is a runtime environment for js.
+    - By using nodejs js we can create APIs.
+    - How to run js file in nodejs
+
+     => node filenane
+
+
+
+3) Basics 
+=========
+
+=> When to store data?
+ 
+   We need to store data in memory, when there is need in app.
+
+=> How to store data in memory?
+ 
+   By using var, let, const, we can store data in memory. 
+  
+=> What to store in memory? 
+
+   We have to store values (data) by using data types. These are the real values to do any functionality in application.
+
+1) variables (we need variables to manipulate/perform some operation/update/delete/save)
+
+   We will declare variables by using var, let, const keywords.
