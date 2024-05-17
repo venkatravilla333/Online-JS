@@ -1,4 +1,4 @@
-var name = 'kohli'
+// var name = 'kohli'
 
 
 //without using loops
@@ -190,13 +190,64 @@ var name = 'kohli'
 // }
 
 
-var i = 1
+// var i = 1
 
-do {
-  if (i === 50) {
-    i++
-    continue
-  }
-  console.log(i, name)
-  i++
-}while(i<=100)
+// do {
+//   if (i === 50) {
+//     i++
+//     continue
+//   }
+//   console.log(i, name)
+//   i++
+// }while(i<=100)
+
+
+
+var obj = {
+  name: 'kohli',
+  age: 30,
+  height: 5,
+  address: 'Delhi',
+  color: 'red'
+}
+console.log(obj)
+
+// without using loop
+
+// console.log(obj.name)
+// console.log(obj.age)
+// console.log(obj.height)
+// console.log(obj.address)
+
+// using using loop
+
+// for (var x in obj) {
+//   console.log(x, obj[x])
+// }
+// for (var x of obj) {
+//   console.log(x, obj[x])
+// }
+
+var arr = [1, 2, 3, 4,5]
+// console.log(arr)
+
+// without using loop
+
+// console.log(arr[0])
+// console.log(arr[1])
+// console.log(arr[2])
+
+// with using loop (for of loop ES-6)
+
+// for (var x of arr) {
+//   console.log(x)
+// }
+
+// for (var key in arr) {
+//   console.log(key, arr[key])
+// }
+
+
+
+
+
