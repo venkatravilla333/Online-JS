@@ -366,4 +366,37 @@ Note:
 ---- 
 
 - It's important to note that the for...in loop should be used for iterating over object properties. If you want to loop through elements of an array, it is recommended to use the for...of loop or a simple for loop with an index.
-- keep in mind that the for...of loop is not suitable for iterating over regular objects   (objects created with {}) since they are not iterable by default. For iterating through object properties, you should use the for...in loop. 
+- keep in mind that the for...of loop is not suitable for iterating over regular objects   (objects created with {}) since they are not iterable by default. For iterating through object properties, you should use the for...in loop.
+
+
+1) What is function?
+
+  =>Function is a block of code which is used to do some task and return value. 
+  =>It stores multiple values in functional scope. 
+  =>For every function call seperate excution context will be created. 
+    For every excution context there are memory creation phase and code excution phase.
+
+2) How can we define function?
+
+    1) Function declaration
+
+    2) Function expression
+   
+          1) named fucntion expression
+          2) anonymous function expression
+          3) arrow function (ES-6)
+   
+3) parameters vs arguments
+
+ Parameters
+ ---------
+
+ - Parameters are the placeholders or variables defined in the function's declaration.
+ - They are like local variables that store the values passed to the function when it is called.
+ - They are defined within the function's parentheses in the function declaration and serve as placeholders for the arguments that will be provided when the function is called.
+
+ Arguments
+ ---------
+ - Arguments are the actual values passed to a function when it is called.
+ - They represent the data that you want to work with within the function.
+ - Arguments are provided in the function call and are placed inside the parentheses.
