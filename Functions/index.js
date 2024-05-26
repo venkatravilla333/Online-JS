@@ -260,3 +260,60 @@
 // }
 
 // test()
+
+
+// var vs let vs const
+
+// re-declaration
+
+// var x = 10
+// let x = 10
+
+// console.log(x)
+
+// var x = 100
+// let x = 100
+// const x = 100
+
+// console.log(x)
+
+//re-assignment
+
+// var x = 10
+// let x = 10
+// const x = 10
+// console.log(x)
+// x = 100
+// console.log(x)
+
+//initialization
+
+// var x
+// let x
+// const x
+
+// console.log(x)
+// x = 10
+// console.log(x)
+
+//closure
+
+// function outer() {
+//   var x = 100
+//   // return x
+
+//   function inner() {
+//     var y = 200
+//     console.log(x)
+//   }
+//   return inner
+// }
+
+// // console.log(outer)
+// var inner = outer()
+// inner()
+
+
+
+
+
