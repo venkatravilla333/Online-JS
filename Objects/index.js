@@ -85,14 +85,14 @@
 
 //Objects are dynamic
 
-var obj = {
-  name: 'sachin',
-  play() {
-    console.log('play')
-  }
-}
+// var obj = {
+//   name: 'sachin',
+//   play() {
+//     console.log('play')
+//   }
+// }
 
-console.log(obj)
+// console.log(obj)
 
 //how to access object properties
 
@@ -124,6 +124,88 @@ console.log(obj)
 // delete obj.play
 
 // console.log(obj)
+
+//How to iterate objects
+
+// var obj = {
+//   name: 'sachin',
+//   age: 40,
+//   address: 'mumbai'
+// }
+
+// console.log(obj)
+
+//without loop
+
+// console.log(obj.name)
+// console.log(obj.age)
+// console.log(obj.address)
+
+//with using loop
+
+// for (var key in obj) {
+//   console.log(key, obj[key])
+// }
+
+// var keys = Object.keys(obj)
+
+// var values = Object.values(obj)
+
+// var entries = Object.entries(obj)
+
+// console.log(keys)
+// console.log(values)
+// console.log(entries)
+
+//copy (clone)
+
+// primitives
+
+// var x = 10
+
+// var y = x
+// console.log(x)
+// console.log(y)
+
+// y = 20
+
+// console.log(x)
+// console.log(y)
+
+//Object
+// import lodash from 'lodash'
+
+var lodash = require('lodash')
+
+var obj1 = {
+  name: 'sachin',
+  address: { road: 101 },
+  play: function () {
+    
+  }
+}
+
+
+// var obj2 = obj1 //normal copy
+// var obj2 = JSON.parse(JSON.stringify(obj1)) //deep copy
+// var obj2 = lodash.cloneDeep(obj1) //deep copy
+// var obj2 =  Object.assign({}, obj1)  //shallow copy ES-5
+var obj2 =   {...obj1} //shallow copy ES-6
+
+
+
+// console.log(obj1)
+// console.log(obj2)
+
+obj2.name = 'kohli'
+obj2.address.road = 201
+
+console.log(obj1)
+console.log(obj2)
+
+
+
+
 
 
 
