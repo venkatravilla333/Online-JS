@@ -175,33 +175,99 @@
 //Object
 // import lodash from 'lodash'
 
-var lodash = require('lodash')
+// var lodash = require('lodash')
 
-var obj1 = {
-  name: 'sachin',
-  address: { road: 101 },
-  play: function () {
+// var obj1 = {
+//   name: 'sachin',
+//   address: { road: 101 },
+//   play: function () {
     
-  }
-}
+//   }
+// }
 
 
 // var obj2 = obj1 //normal copy
 // var obj2 = JSON.parse(JSON.stringify(obj1)) //deep copy
 // var obj2 = lodash.cloneDeep(obj1) //deep copy
 // var obj2 =  Object.assign({}, obj1)  //shallow copy ES-5
-var obj2 =   {...obj1} //shallow copy ES-6
+// var obj2 =   {...obj1} //shallow copy ES-6
 
 
 
 // console.log(obj1)
 // console.log(obj2)
 
-obj2.name = 'kohli'
-obj2.address.road = 201
+// obj2.name = 'kohli'
+// obj2.address.road = 201
 
-console.log(obj1)
-console.log(obj2)
+// console.log(obj1)
+// console.log(obj2)
+
+
+//Math object
+
+// console.log(Math)
+
+// console.log(Math.min(2,9,20,4))
+// console.log(Math.max(2,9,20,4))
+// console.log(Math.floor(10.6))
+// console.log(Math.floor(10.10))
+// console.log(Math.floor(10.1))
+// console.log(Math.ceil(10.6))
+// console.log(Math.ceil(10.10))
+// console.log(Math.ceil(10.1))
+// console.log(Math.round(10.5))
+// console.log(Math.round(10.6))
+// console.log(Math.round(10.4))
+// console.log(Math.floor(Math.random()*10))
+// console.log(Math.floor(Math.random()*50))
+// console.log(Math.floor(Math.random()*100))
+// console.log(Math.floor(Math.random()*1000))
+// console.log(Math.floor(Math.random()*10000))
+// console.log(Math.pow(2,3))
+// console.log(Math.sqrt(9))
+// console.log(Math.sqrt(25))
+
+
+//Date object
+
+// var now = new Date()
+// console.log(now)
+// console.log(now.getFullYear())
+// console.log(now.getDate())
+// console.log(now.getDay())
+// console.log(now.getHours())
+// console.log(now.getMonth())
+// console.log(now.getMinutes())
+// now.setFullYear(2050)
+// now.setDate(30)
+// now.setHours(22)
+// console.log(now)
+
+// var date1 = new Date(2040, 5, 20, 9, 20, 50) //number
+
+// var date1 = new Date('2050 11 30 20:10:30') //string
+// console.log(date1)
+
+// console.log(date1.getFullYear())
+// console.log(date1.getDate())
+// console.log(date1.getHours())
+// console.log(date1.getSeconds())
+// console.log(date1.getMonth())
+
+// date1.setFullYear(2047)
+// date1.setMonth(7)
+// console.log(date1)
+
+
+//Template string (ES-6)
+
+var name = 'sachin'
+var age = 40
+
+console.log('Hi how are you' + ' ' + name + ' ' + 'my age is' + ' ' + age) //ES-5
+console.log(`Hi how are you ${name} my age is ${age}`) //ES-6
+
 
 
 
