@@ -262,11 +262,71 @@
 
 //Template string (ES-6)
 
-var name = 'sachin'
-var age = 40
+// var name = 'sachin'
+// var age = 40
 
-console.log('Hi how are you' + ' ' + name + ' ' + 'my age is' + ' ' + age) //ES-5
-console.log(`Hi how are you ${name} my age is ${age}`) //ES-6
+// console.log('Hi how are you' + ' ' + name + ' ' + 'my age is' + ' ' + age) //ES-5
+// console.log(`Hi how are you ${name} my age is ${age}`) //ES-6
+
+
+//String object
+
+// var str = ' Hi how are you '
+var str = 'Hi how are you'
+
+// console.log(str)
+
+//find length
+// console.log(str.length)
+
+//how to remove white spaces
+
+// console.log(str.trim().length)
+// console.log(str.trimStart().length)
+// console.log(str.trimEnd().length)
+
+//How to extract a part of string
+
+// console.log(str.slice())
+// console.log(str.slice(0))
+// console.log(str.slice(3, 6))
+// console.log(str.slice(-3))
+
+// console.log(str.substring())
+// console.log(str.substring(0))
+// console.log(str.substring(3, 6))
+// console.log(str.substring(-3))
+
+// console.log(str.substr())
+// console.log(str.substr(0))
+// console.log(str.substr(0, 6))
+// console.log(str.substr(3, 7))
+// console.log(str.substr(-3))
+
+// How to extract a string character
+
+// console.log(str.charAt(0))
+// console.log(str.charAt(1))
+// console.log(str.charAt(2))
+
+// console.log(str.charCodeAt(0))
+
+//How to add new string to the end of existing string
+
+// console.log(str.concat(' bye'))
+
+//Conversion
+
+// console.log(str.toUpperCase())
+// console.log(str.toLowerCase())
+
+
+
+
+
+
+
+
 
 
 
