@@ -272,7 +272,8 @@
 //String object
 
 // var str = ' Hi how are you '
-var str = 'Hi how are you'
+// var str = 'Hi you how are you'
+var str = 'Hi you how are you'
 
 // console.log(str)
 
@@ -315,10 +316,53 @@ var str = 'Hi how are you'
 
 // console.log(str.concat(' bye'))
 
-//Conversion
+//Case Conversion
 
 // console.log(str.toUpperCase())
 // console.log(str.toLowerCase())
+
+//How to replace existing string with new string
+
+// console.log(str.replace('you', 'me'))
+// console.log(str.replaceAll('you', 'me'))
+// console.log(str.replace('are', 'am'))
+
+//How to convert string into array
+
+
+// console.log(str.split()) //total string as one value
+// console.log(str.split('')) //each letter
+// console.log(str.split(' ')) //each word
+
+
+//How to pad new content to existing string
+
+
+// var str1 = 'hello'
+
+// console.log(str1.padStart(10, 3)) //33333hello
+// console.log(str1.padEnd(10, 3)) //hello33333
+
+
+//How to find specific string
+
+// console.log(str.indexOf('you')) //first occurance index num
+// console.log(str.indexOf('bye')) //first occurance index num
+// console.log(str.lastIndexOf('you')) //last occurance index num
+// console.log(str.lastIndexOf('bye')) //last occurance index num
+// console.log(str.includes('you')) //
+// console.log(str.includes('bye')) //
+// console.log(str.startsWith('Hi')) //
+// console.log(str.startsWith('bye')) //
+// console.log(str.endsWith('Hi')) //
+// console.log(str.endsWith('you')) //
+
+
+var msg = 'hi hello'
+
+console.log(msg.repeat(100))
+
+
 
 
 
