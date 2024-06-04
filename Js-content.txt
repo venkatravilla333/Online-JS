@@ -992,6 +992,10 @@ The repeat() method does not change the original string.
 
        =>for of loop iterates an array values only.
 
+   2) for in     
+
+      =>for in loop iterates an array index numbers only.
+
    2) forEach:
 
       =>The forEach() method calls a function for each element in an array.
