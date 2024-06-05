@@ -163,7 +163,7 @@ var originalArr = ['sachin', { road: 101 }, function play() { }]
 
 //How to loop array items
 
-var arr = [1,2,3,4,5]
+// var arr = [1,2,3,4,5]
 
 //how to access array values without using loop
 
@@ -194,6 +194,76 @@ var arr = [1,2,3,4,5]
 
 // console.log(x)
 
+
+//How to convert array into string
+
+// var arr = [1, 2, 3, 4, 5]
+
+// console.log(arr)
+// console.log(typeof arr)
+// console.log(Array.isArray(arr))
+
+// var str = arr.join()
+
+// console.log(str)
+// console.log(typeof str)
+
+// var myArr = str.split()
+// console.log(myArr)
+// console.log(typeof myArr)
+
+//Testing of array items
+
+var arr = [1,2,3,4,5]
+
+// some
+
+// var some = arr.some((item) => {
+//  return item>5
+// })
+
+// console.log(some)
+
+
+//every
+
+// var every = arr.every((item) => {
+//   return item>0
+// })
+// console.log(every)
+
+
+//How to filter array values based on condition
+
+// var arr = [1, 2, 3, 4, 5]
+
+// var filterResult = arr.filter((item) => {
+//  return item > 2
+// })
+
+// console.log(filterResult)
+
+//How to map array items with something (trasformation)
+
+// var arr = [1, 2, 3, 4, 5]
+
+// console.log(arr)
+
+// var mapResult = arr.map((item) => {
+//  return item*100
+// })
+
+// console.log(mapResult)
+
+//How to reduce array items into single item
+
+// var arr = [1, 2, 3, 4, 5]
+
+// var reduceResult = arr.reduce((cum, cur) => {
+//   console.log(cum, cur)
+//   return cum * cur
+// }, 2)
+// console.log(reduceResult)
 
 
 
