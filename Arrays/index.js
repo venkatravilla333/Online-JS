@@ -267,13 +267,104 @@ var arr = [1,2,3,4,5]
 
 
 
+//Flattening of array
+
+// var arr = [1, 2, [10, 20, [100, 200, [1000], [2000]]]]
+
+// var flattenArr = []
+
+// function flattenFun(arr) {
+//   for (var value of arr) {
+//     console.log(value)
+//     if (Array.isArray(value)) {
+//       flattenFun(value)
+//     } else {
+//       flattenArr.push(value)
+//     }
+//   }
+// }
+
+// flattenFun(arr)
+
+// console.log(flattenArr)
 
 
+//flat
+
+// var flattenArr = arr.flat(Infinity)
+// console.log(flattenArr)
 
 
+//How to remove duplicate items in array
 
 
+// console.log(arr)
+
+//Set with spread operator
+
+// var uniqueArr = [...new Set(arr)]
+// console.log(uniqueArr)
+
+// var arr = [1, 2, 4, 5, 3, 6, 3, 2, 7, 9, 2]
+// var uniqueArr = []
+
+// function removeDuplicate(arr) {
+//   for (var value of arr) {
+//     if (uniqueArr.indexOf(value) === -1) {
+//         uniqueArr.push(value)
+//     }
+//   }
+// }
+
+// removeDuplicate(arr)
+
+// console.log(uniqueArr)
+
+//map vs forEach
+
+// var arr = [1, 2, 3, 4, 5]
+
+// var mapResult = arr.map((item) => {
+//   return 100
+// })
+
+// console.log(mapResult)
+
+// var foreachResult = arr.forEach((v, i) => {
+//   return 100
+// })
+
+// console.log(foreachResult)
 
 
+//Array.isArray()
 
+// var x = 'sachin'
+
+// console.log(Array.isArray(x))
+
+//Array.from()
+
+// var str =  'hello'
+var arr = []
+console.log(arr)
+var obj = {}
+console.log(obj)
+var str = new String('hello')
+console.log(str)
+var mymap = new Map()
+console.log(mymap)
+var myset = new Set()
+console.log(myset)
+
+function test() {
+  console.log(arguments)
+}
+test()
+
+function* genFun() {
+  
+}
+var genObj = genFun()
+console.log(genObj)
 
