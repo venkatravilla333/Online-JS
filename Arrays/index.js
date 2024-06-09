@@ -346,25 +346,224 @@ var arr = [1,2,3,4,5]
 //Array.from()
 
 // var str =  'hello'
-var arr = []
-console.log(arr)
-var obj = {}
-console.log(obj)
-var str = new String('hello')
-console.log(str)
-var mymap = new Map()
-console.log(mymap)
-var myset = new Set()
-console.log(myset)
+// var arr = []
+// console.log(arr)
+// var obj = {}
+// console.log(obj)
+// var str = new String('hello')
+// console.log(str)
+// var mymap = new Map()
+// console.log(mymap)
+// var myset = new Set()
+// console.log(myset)
 
-function test() {
-  console.log(arguments)
-}
-test()
+// function test() {
+//   console.log(arguments)
+// }
+// test()
 
-function* genFun() {
+// function* genFun() {
   
-}
-var genObj = genFun()
-console.log(genObj)
+// }
+// var genObj = genFun()
+// console.log(genObj)
+
+// var msg = 'hi how are you'
+
+// var result = Array.from(msg)
+// var result = Array.from({ length: 20 }, (v, i) => {
+//   return i+1
+// })
+// console.log(result)
+
+//fill
+
+// var arr = [1, 2, 3, 4, 5]
+
+// // console.log(arr)
+
+// arr.fill('hi')
+
+// console.log(arr)
+
+
+//at
+
+// var arr = [1, 2, 'hello', 4, 5]
+
+// var result = arr.at(-2)
+// console.log(result)
+
+//sort
+
+//primitives with single value
+
+var arr = [1, 5, 3, 2, 8, 6]
+
+//primitives with double value
+
+// var arr = [1, 5, 13, 20, 8, 6];
+
+//reference
+
+// var arr = [{course: 'react'}, {course: 'html'}, {course: 'nodejs'}]
+
+
+
+
+//ascending
+
+// var asc = arr.sort()
+// var dec = asc.reverse()
+// console.log(asc)
+// console.log(dec)
+
+// var asc = arr.sort((a,b) => {
+//   if (a > b) {
+//     return 1
+//   } else {
+//     return -1
+//   }
+// })
+
+// var dsc = arr.sort((a,b) => {
+//   if (a > b) {
+//     return -1
+//   } else {
+//     return 1
+//   }
+// })
+
+// console.log(dsc)
+
+// var asc = arr.sort((obj1, obj2) => {
+//   if (obj1.course>obj2.course) {
+//     return 1
+//   } else {
+//     return -1
+//   }
+// })
+
+// var dsc = arr.sort((obj1, obj2) => {
+//   if (obj1.course>obj2.course) {
+//     return -1
+//   } else {
+//     return 1
+//   }
+// })
+// console.log(dsc)
+
+// for (var i = 0; i < arr.length; i++){
+//   for (var j = 1 + i; j < arr.length; j++){
+//     if (arr[i] > arr[j]) {
+//       var temp = arr[i]
+//       arr[i] = arr[j]
+//       arr[j] = temp
+//     }
+//   }
+// }
+
+// console.log(arr)
+
+
+//arrays and string object combination interview questions
+
+//how to reverse a given string
+
+// var str = 'hello'
+
+// function reverseString(msg) {
+
+//   return msg.split('').reverse().join('')
+  
+// }
+// console.log(reverseString(str))
+
+// var str = 'hello'
+
+// function repeatStr(str, num) {
+//  return  str.repeat(num)
+// }
+
+// console.log(repeatStr(str, 3))
+
+//How to convert first letter into capital
+
+// var str = 'venkat'
+
+// function capitalisefirstLetter(str) {
+//   return str.charAt(0).toUpperCase().concat(str.slice(1))
+// }
+
+// console.log(capitalisefirstLetter(str))
+
+
+// var str = 'venkat sachin kohli dhoni'
+
+// function capitalisefirstLetterEachword(str) {
+//    var result =  str.split(' ').map((word) => {
+//    return word.charAt(0).toUpperCase().concat(word.slice(1))
+//    })
+//  return result.join(' ')
+  
+// }
+
+// console.log(capitalisefirstLetterEachword(str))
+
+//How to find longest word in a string
+
+// var str = 'hi how are you sachin venkatesh'
+
+// function findLongest(str) {
+//   var words = str.split(' ')
+//   // console.log(words)
+
+//   var longest = 'how'
+
+//   for (var word of words) {
+//     // console.log(word)
+//     if (word.length > longest.length) {
+//       longest = word
+//     }
+    
+//   }
+//   return longest
+// }
+
+// console.log(findLongest(str))
+
+
+//how to find given string is palindrome
+
+// function findPalindrome(str) {
+
+//   var reversed = str.split('').reverse().join('')
+//   return reversed === str
+// }
+// // console.log(findPalindrome('racecar'))
+// console.log(findPalindrome('venkat'))
+
+
+//find the vowels in a given string
+
+
+// function findVowels(str) {
+//   var vowels = 'aeiouAEIOU'
+//   let count = 0
+//   for (var char of str) {
+//     console.log(char)
+//     if (vowels.includes(char)) {
+//       count++
+//     }
+//   }
+//   return count
+  
+// }
+// console.log(findVowels('venkat'))
+
+
+
+
+
+
 

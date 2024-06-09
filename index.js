@@ -164,6 +164,13 @@
 // console.log(x<=y)
 
 // equality operators
+// var y = null
+// var x = undefined
+// var x = {}
+// var y = {}
+
+// console.log(x==y)
+// console.log(x===y)
 
 // console.log(x==y) //loose equality (compares only value)
 // console.log(x===y) //strict equality (compares value and its data type)
@@ -195,8 +202,12 @@ var cibilScore = false
 // console.log(rblCreditCard)
 
 
-// Not operator 
+// Not operator
 // console.log(!income)
+
+
+
+
 
 
 
