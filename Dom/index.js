@@ -131,6 +131,89 @@
 // h2.remove()
 // body.removeChild(h2)
 
+// var button = document.createElement('button')
+// console.log(button)
+// button.id = 'mybtn'
+
+// button.innerHTML = 'Click'
+
+// var body = document.getElementById('body')
+// body.appendChild(button)
+
+//how to attach events to dom elements
+
+// var button = document.getElementById('mybtn')
+// console.log(button)
+
+// var btnClick = () => {
+//   console.log('btn clicked')
+// }
+
+// button.addEventListener('click', btnClick)
+
+
+var parent = document.getElementById('parent')
+var child = document.getElementById('child')
+var subchild = document.getElementById('subchild')
+
+//event bubling phase
+
+// var parentFun = () => {
+//   console.log('parent')
+// }
+
+// parent.addEventListener('click', parentFun, false)
+
+// var childFun = (e) => {
+//   console.log('child')
+//   // e.stopPropagation()
+// }
+
+// child.addEventListener('click', childFun, false)
+
+// var subChildFun = (e) => {
+//   console.log(e)
+//   console.log(e.target)
+//   console.log(e.clientX)
+//   console.log(e.clientY)
+//   console.log(e.offsetX)
+//   console.log(e.offsetY)
+//   console.log('sub child')
+// }
+
+subchild.addEventListener('click', subChildFun, false)
+
+
+//event capturing phase
+
+// var parentFun = () => {
+//   console.log('parent')
+// }
+
+// parent.addEventListener('click', parentFun, true)
+
+// var childFun = () => {
+//   console.log('child')
+// }
+
+// child.addEventListener('click', childFun, true)
+
+// var subChildFun = () => {
+//   console.log('sub child')
+// }
+
+// subchild.addEventListener('click', subChildFun, true)
+
+//event delegation
+
+// var table = document.getElementById('table')
+
+// var btnClick = () => {
+//   console.log('click')
+// }
+
+// table.addEventListener('click', btnClick)
+
 
 
 
