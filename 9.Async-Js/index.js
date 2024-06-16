@@ -81,34 +81,61 @@
 
 //async and await
 
-var data 
-function fetchData(num) {
- return new Promise((res, rej) => {
-    setTimeout(() => {
-      // data = { pname: 'apple', price: 100 }
-      data = num*num
-      res(data)
-    }, 4000)
-  })
-}
+// var data
+// function fetchData(num) {
+//  return new Promise((res, rej) => {
+//     setTimeout(() => {
+//       // data = { pname: 'apple', price: 100 }
+//       data = num*num
+//       res(data)
+//     }, 4000)
+//   })
+// }
 
 
-async function displayData() {
-  var data1 = await fetchData(2) 
-  console.log(data1) 
-  var data2 = await fetchData(data1) 
-  console.log(data2) 
-  var data3 = await fetchData(data2) 
-  console.log(data3) 
-  var data4 = await fetchData(data3) 
-  console.log(data4) 
-  var data5 = await fetchData(data4) 
-  console.log(data5) 
-  var data6 = await fetchData(data5) 
-  console.log(data6) 
-}
-displayData()
+// async function displayData() {
+//   var data1 = await fetchData(2)
+//   console.log(data1)
+//   var data2 = await fetchData(data1)
+//   console.log(data2)
+//   var data3 = await fetchData(data2)
+//   console.log(data3)
+//   var data4 = await fetchData(data3)
+//   console.log(data4)
+//   var data5 = await fetchData(data4)
+//   console.log(data5)
+//   var data6 = await fetchData(data5)
+//   console.log(data6)
+// }
+// displayData()
 
+
+
+var pr1= new Promise((res, rej) => {
+  setTimeout(() => {
+    rej('PR-1')
+  }, 6000)
+})
+var pr2= new Promise((res, rej) => {
+  setTimeout(() => {
+    res('PR-2')
+  }, 3000)
+})
+var pr3= new Promise((res, rej) => {
+  setTimeout(() => {
+    res('PR-3')
+  }, 2000)
+})
+
+// Promise.race([pr1, pr2, pr3]).then((res) => {
+//   console.log(res)
+// })
+// Promise.all([pr1, pr2, pr3]).then((res) => {
+//   console.log(res)
+// })
+// Promise.allSettled([pr1, pr2, pr3]).then((res) => {
+//   console.log(res)
+// })
 
 
 
