@@ -8,8 +8,6 @@ var name_error = document.getElementById('name_error')
 var email_error = document.getElementById('email_error')
 var password_error = document.getElementById('password_error')
 
-
-
 form.addEventListener('submit', (e) => {
   
   const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;

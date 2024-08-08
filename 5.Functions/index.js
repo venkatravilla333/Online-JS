@@ -314,6 +314,65 @@
 // inner()
 
 
+//This key word
+
+
+// console.log(this)
+
+// function test() {
+//   console.log(this)
+// }
+// test()
+
+// var test1 = ()=> {
+//   console.log(this)
+// }
+// test1()
+
+// var obj = {
+//   name: 'sachin',
+//   play1: function () {
+//     console.log(this)
+//     inner1 = ()=> {
+//       console.log(this)
+//     }
+//     inner1()
+//   },
+//   play2: ()=> {
+//     console.log(this)
+//    function inner2 () {
+//       console.log(this)
+//     }
+//     inner2()
+//   }
+// }
+
+// obj.play1()
+// obj.play2()
+
+function Mytest() {
+  console.log(this)
+  this.name = 'sachin';
+  this.play1 = function () {
+    console.log(this)
+    inner1 = () => {
+      console.log(this)
+    }
+    inner1()
+  }
+  this.play2 = ()=> {
+    console.log(this)
+    inner2 = ()=> {
+      console.log(this)
+    }
+    inner2()
+  }
+    
+}
+var obj = new Mytest()
+obj.play1()
+obj.play2()
+
 
 
 
