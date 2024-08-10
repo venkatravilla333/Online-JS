@@ -350,28 +350,149 @@
 // obj.play1()
 // obj.play2()
 
-function Mytest() {
-  console.log(this)
-  this.name = 'sachin';
-  this.play1 = function () {
-    console.log(this)
-    inner1 = () => {
-      console.log(this)
-    }
-    inner1()
-  }
-  this.play2 = ()=> {
-    console.log(this)
-    inner2 = ()=> {
-      console.log(this)
-    }
-    inner2()
-  }
+// function Mytest() {
+//   console.log(this)
+//   this.name = 'sachin';
+//   this.play1 = function () {
+//     console.log(this)
+//     inner1 = () => {
+//       console.log(this)
+//     }
+//     inner1()
+//   }
+//   this.play2 = ()=> {
+//     console.log(this)
+//     inner2 = ()=> {
+//       console.log(this)
+//     }
+//     inner2()
+//   }
     
+// }
+// var obj = new Mytest()
+// obj.play1()
+// obj.play2()
+
+
+// class Myclass{
+//   constructor() {
+//     console.log(this)
+//     this.name = 'sachin';
+//     this.play1 = function () {
+//       console.log(this)
+//       function inner1() {
+//         console.log(this)
+//       }
+//       inner1()
+//      var inner2 = ()=> {
+//         console.log(this)
+//       }
+//       inner2()
+//     };
+//     this.play2 = ()=> {
+//       console.log(this)
+//       function inner3() {
+//         console.log(this)
+//       }
+//       inner3()
+//     var inner4 =() => {
+//         console.log(this)
+//       }
+//       inner4()
+//     }
+//  }
+// }
+
+// // console.log(typeof Myclass)
+// new Myclass().play1()
+// new Myclass().play2()
+
+//Changing of this keyword reference
+
+// var obj = {
+//   name: 'sachin',
+//   age: 40,
+//   play: function () {
+    
+//   }
+// }
+// var test = ()=> {
+//   console.log(this)
+// }
+
+// test()
+// test.call(obj)
+// test.apply(obj)
+// test.bind(obj)()
+
+// var obj = {
+//   name: 'sachin',
+//   age: 40,
+//   play: function(){
+//   function inner(a,b,c) {
+//     console.log(this)
+//     console.log(a,b,c)
+//     }
+//     inner(1,2,3)
+//     inner.call(obj, 1,2,3)
+//     inner.apply(obj, [1,2,3])
+//     inner.bind(obj, 1,2,3)()
+//   }
+// }
+
+// obj.play()
+// var inner = obj.play()
+// inner(1,2,3)
+// inner.call(obj, 1,2,3)
+// inner.apply(obj, [1,2,3])
+// inner.bind(obj, 1,2,3)()
+
+// function Mytest() {
+//   console.log(this)
+//   this.name = 'sachin';
+//   this.age = 40;
+//   this.play = function () {
+//     console.log(this)
+//     var inner1 = (a,b,c)=> {
+//       console.log(this)
+//       console.log(a,b,c)
+//     }
+//     inner1(1,2,3)
+//     // inner1.call(this, 1,2,3)
+//     // inner1.apply(this, [1,2,3])
+//     // inner1.bind(this, 1, 2, 3)()
+    
+//   }
+// }
+// new Mytest().play()
+
+class Myclass{
+  constructor() {
+    console.log(this)
+    this.name = 'sachin';
+    this.age = 40;
+    this.play = function () {
+      console.log(this)
+      // function inner(a,b,c) {
+      //   console.log(this)
+      //   console.log(a,b,c)
+      // }
+      var inner = (a,b,c)=> {
+        console.log(this)
+        console.log(a,b,c)
+      }
+      inner(1,2,3)
+      // inner.call(this,1,2,3)
+      // inner.apply(this, [1,2,3])
+      // inner.bind(this, 1,2,3)()
+    }
+  }
 }
-var obj = new Mytest()
-obj.play1()
-obj.play2()
+
+new Myclass().play()
+
+
+
 
 
 
